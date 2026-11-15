@@ -1,213 +1,169 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adam Ahmed | The Submission Wizard</title>
-
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #101014;
-  color: white;
-  text-align: center;
-}
-
-header {
-  padding: 45px 15px;
-  background: linear-gradient(135deg, #171717, #383027);
-}
-
-.athlete-photo {
-  width: 210px;
-  height: 210px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #f5bd45;
-}
-
-h1 {
-  font-size: 36px;
-  margin-bottom: 8px;
-}
-
-.nickname {
-  color: #f5bd45;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-section {
-  padding: 22px 15px;
-}
-
-.card {
-  max-width: 650px;
-  margin: 18px auto;
-  padding: 25px;
-  background: #202027;
-  border: 1px solid #393941;
-  border-radius: 15px;
-}
-
-.record {
-  font-size: 58px;
-  color: #f5bd45;
-  font-weight: bold;
-}
-
-.stat {
-  color: #62dc91;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.fight {
-  text-align: left;
-  margin: 15px 0;
-  padding: 18px;
-  background: #292931;
-  border-left: 4px solid #f5bd45;
-  border-radius: 10px;
-}
-
-.fight h3 {
-  margin-top: 0;
-  color: #f5bd45;
-}
-
-.win {
-  color: #62dc91;
-  font-weight: bold;
-}
-
-.team-logo {
-  width: 180px;
-  max-width: 85%;
-  background: white;
-  padding: 10px;
-  border-radius: 12px;
-}
-
-footer {
-  padding: 25px;
-  color: #aaa;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Submission Wizard | Adam Ahmed</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: white;
+      text-align: center;
+    }
+    header { padding: 45px 20px 25px; }
+    .profile {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #d5a21b;
+    }
+    h1 { margin-bottom: 8px; font-size: 32px; }
+    .nickname { color: #d5a21b; font-size: 19px; }
+    .stats, section {
+      max-width: 850px;
+      margin: 25px auto;
+      padding: 25px;
+    }
+    .stats {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+    .stat {
+      background: #191919;
+      padding: 18px 25px;
+      border-radius: 12px;
+      min-width: 125px;
+    }
+    .stat strong {
+      display: block;
+      color: #d5a21b;
+      font-size: 27px;
+    }
+    section {
+      background: #151515;
+      border-radius: 14px;
+      text-align: left;
+    }
+    h2 {
+      color: #d5a21b;
+      text-align: center;
+      margin-top: 0;
+    }
+    .fight {
+      background: #222;
+      padding: 16px;
+      border-radius: 10px;
+      margin: 13px 0;
+    }
+    .fight h3 { margin-top: 0; }
+    .team-logo {
+      width: 150px;
+      max-width: 60%;
+      display: block;
+      margin: 15px auto;
+      border-radius: 10px;
+    }
+    .socials {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .socials a {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 9px;
+      background: #d5a21b;
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .socials a:hover { background: white; }
+    footer {
+      padding: 25px;
+      color: #999;
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-  <img
-    class="athlete-photo"
-    src="IMG-20261113-WA0054.jpg"
-    alt="Adam Ahmed">
+  <header>
+    <img class="profile"
+         src="IMG-20261113-WA0054.jpg"
+         alt="Adam Ahmed">
+    <h1>ADAM AHMED</h1>
+    <div class="nickname">THE SUBMISSION WIZARD</div>
+    <p>Amateur MMA Athlete | Elite MMA Team</p>
+  </header>
 
-  <h1>ADAM AHMED</h1>
-
-  <div class="nickname">
-    THE SUBMISSION WIZARD
+  <div class="stats">
+    <div class="stat"><strong>3–0</strong>Fight Record</div>
+    <div class="stat"><strong>3</strong>Submission Wins</div>
+    <div class="stat"><strong>57 KG</strong>Weight Class</div>
   </div>
 
-  <p>Amateur MMA Athlete | Egypt</p>
-  <p>Elite MMA Team</p>
-</header>
-
-<section>
-
-  <div class="card">
-    <h2>FIGHT RECORD</h2>
-
-    <div class="record">3 - 0</div>
-
-    <div class="stat">UNDEFEATED</div>
-
-    <p>3 Wins | 0 Losses</p>
-    <p>3 Submission Victories</p>
-    <p>Weight Category: 57 KG</p>
-  </div>
-
-  <div class="card">
+  <section>
     <h2>ABOUT ME</h2>
-
     <p>
-      Adam Ahmed is an amateur Mixed Martial Arts
-      athlete representing Elite MMA Team in Egypt.
+      I am Adam Ahmed, an amateur MMA athlete competing in the 57 KG
+      division. I represent Elite MMA Team and focus on developing my
+      skills and competing at a higher level.
     </p>
+  </section>
 
-    <p>
-      Known as The Submission Wizard.
-    </p>
-  </div>
-
-  <div class="card">
+  <section>
     <h2>FIGHT HISTORY</h2>
 
     <div class="fight">
-      <h3>FIGHT 01 - NIGHTMARE</h3>
-
-      <p class="win">WIN - SUBMISSION</p>
-
-      <p>Technique: Guillotine</p>
-      <p>Finish: Round 2</p>
-      <p>Weight: 57 KG</p>
+      <h3>Fight 1 — Nightmare Organization</h3>
+      <p>Result: Win by Guillotine</p>
+      <p>Finish: Round 2 | Weight: 57 KG</p>
     </div>
 
     <div class="fight">
-      <h3>FIGHT 02 - REPUBLIC CHAMPIONSHIP</h3>
-
-      <p class="win">WIN - SUBMISSION</p>
-
-      <p>Technique: Back Attack</p>
-      <p>Finish: Round 2</p>
-      <p>Weight: 57 KG</p>
+      <h3>Fight 2 — Republic Championship</h3>
+      <p>Result: Win by Back Attack</p>
+      <p>Finish: Round 2 | Weight: 57 KG</p>
     </div>
 
     <div class="fight">
-      <h3>FIGHT 03 - REPUBLIC CHAMPIONSHIP</h3>
-
-      <p class="win">WIN - SUBMISSION</p>
-
-      <p>Technique: Ninja Choke</p>
-      <p>Finish: 25 Seconds</p>
-      <p>Weight: 57 KG</p>
+      <h3>Fight 3 — Republic Championship</h3>
+      <p>Result: Win by Ninja Choke</p>
+      <p>Finish: 25 Seconds | Weight: 57 KG</p>
     </div>
-  </div>
+  </section>
 
-  <div class="card">
-    <h2>ACHIEVEMENTS</h2>
+  <section>
+    <h2>TEAM</h2>
+    <img class="team-logo"
+         src="Screenshot_20261115_034827_WhatsApp.jpg"
+         alt="Elite MMA Team Logo">
+    <h3 style="text-align:center;">ELITE MMA TEAM</h3>
+  </section>
 
-    <p>Egyptian Republic Championship - 2026</p>
-    <p>Age Category: 2011-2012</p>
-    <p>Weight Category: 57 KG</p>
-    <p>25-Second Submission Victory</p>
-  </div>
+  <section>
+    <h2>FOLLOW ADAM</h2>
+    <div class="socials">
+      <a href="https://www.tiktok.com/@adam_82_4"
+         target="_blank" rel="noopener noreferrer">TikTok</a>
 
-  <div class="card">
-    <h2>MY TEAM</h2>
+      <a href="https://www.instagram.com/a__d_a_m133"
+         target="_blank" rel="noopener noreferrer">Instagram</a>
 
-    <img
-      class="team-logo"
-      src="Screenshot_20261115_034827_WhatsApp.jpg"
-      alt="Elite MMA Team Logo">
+      <a href="https://www.facebook.com/share/1Fz6wEvq5y/"
+         target="_blank" rel="noopener noreferrer">Facebook</a>
+    </div>
+  </section>
 
-    <p>ELITE MMA TEAM</p>
-  </div>
-
-</section>
-
-<footer>
-  Adam Ahmed | The Submission Wizard
-</footer>
+  <footer>
+    © 2026 Adam Ahmed | The Submission Wizard
+  </footer>
 
 </body>
 </html>
-
